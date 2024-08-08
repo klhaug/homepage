@@ -32,6 +32,10 @@ h1 {
     gap: 25px;
 }
 
+p {
+    padding-right: 5rem;
+}
+
 .mainwrapper {
     max-width: 1440px;
 }
@@ -45,6 +49,10 @@ button {
     font-size: 19px;
     font-weight: 300;
     align-self: flex-start;
+}
+
+button:hover {
+    cursor: pointer;
 }
 li {
     list-style: none;
