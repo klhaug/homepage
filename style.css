@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -10,6 +11,7 @@ main {
     display: flex;
     align-items: center;
     height: 70vh;
+    min-height: 600px;
   
 }
 
@@ -32,6 +34,12 @@ h1 {
     gap: 25px;
 }
 
+p {
+    padding-right: 5rem;
+}
+
+
+
 .mainwrapper {
     max-width: 1440px;
 }
@@ -46,10 +54,18 @@ button {
     font-weight: 300;
     align-self: flex-start;
 }
+
+button:hover {
+    cursor: pointer;
+}
 li {
     list-style: none;
     display: inline;
     margin: 10px;
+}
+
+li:hover {
+    cursor: pointer;
 }
 .imgcontainer {
     display: flex;
@@ -59,11 +75,13 @@ li {
 img {
     width: 75%;
     min-width: 347px;
+    border-radius: 50%;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
+    margin: 5px;
 }
 
 footer {
