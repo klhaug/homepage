@@ -89,6 +89,69 @@ nav {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    position: fixed;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+
+    }
+    h1 {
+        font-size: 2rem;
+        margin: 10px;
+        padding: 0px 20px;
+    }
+
+    h2 {
+        font-size: 0.6rem;
+    }
+
+    li {
+        font-size: 0.8rem;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        padding: 0;
+        margin-bottom: 150px;
+    }
+
+    img {
+        width: 75%;
+        min-width: 150px;
+        border-radius: 50%;
+    }
+
+    .contentcontainer {
+        display: grid;
+        margin-top: 100px;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .mainwrapper {
+        max-width: 1440px;
+        margin: 0;
+    }
+    #bodyTxt {
+        margin-bottom: 0px;
+        padding: 0px 30px;
+    }
+    body {
+        padding: 5px;
+    }
+    footer {
+        margin: 5px;
+        display: inline;
+    }
+    button {
+        align-self: center;
+        margin: 20px 0px;
+    }
+  }
