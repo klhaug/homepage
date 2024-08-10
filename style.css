@@ -161,6 +161,7 @@ footer {
     button {
         align-self: center;
         margin: 20px 0px;
+        border-style: none;
     }
   footer {
     margin-top: 8rem;
