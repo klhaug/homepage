@@ -34,8 +34,7 @@ a {
 .h1container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 25px;
+    justify-content: space-between;
 }
 
 p {
@@ -56,11 +55,13 @@ button {
     background-color: #ffa500;
     font-size: 19px;
     font-weight: 300;
-    align-self: flex-start;
+    align-self: start;
+    box-shadow: 1px 1px 1px black;
 }
 
 button:hover {
     cursor: pointer;
+    scale: 1.05;
 }
 li {
     list-style: none;
@@ -89,7 +90,9 @@ nav {
 }
 
 footer {
-    position: fixed;
+    width: 100%;
+    margin-top: 10rem;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -97,9 +100,14 @@ footer {
 
     }
     h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
         margin: 10px;
         padding: 0px 20px;
+        text-align: center;
+    }
+
+    .h1container {
+        gap: 1rem;
     }
 
     h2 {
@@ -123,16 +131,18 @@ footer {
     }
 
     img {
-        width: 75%;
+        width: 60%;
         min-width: 150px;
         border-radius: 50%;
+    }
+    .imgcontainer {
+        margin: 2rem 0;
     }
 
     .contentcontainer {
         display: grid;
         margin-top: 100px;
         grid-template-columns: 1fr;
-        gap: 35px;
     }
 
     .mainwrapper {
@@ -146,12 +156,12 @@ footer {
     body {
         padding: 5px;
     }
-    footer {
-        margin: 5px;
-        display: inline;
+
     }
     button {
         align-self: center;
         margin: 20px 0px;
     }
+  footer {
+    margin-top: 8rem;
   }
